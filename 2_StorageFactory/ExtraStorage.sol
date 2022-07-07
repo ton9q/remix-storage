@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.7;
 
-import "./1_SimpleStorage.sol";
+import "./SimpleStorage.sol";
 
 contract ExtraStorage is SimpleStorage {
     function store(uint256 _favoriteNumber) public virtual override {
