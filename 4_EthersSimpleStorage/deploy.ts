@@ -1,6 +1,7 @@
-const ethers = require('ethers')
-const fs = require('fs-extra')
-require('dotenv').config()
+import { ethers } from 'ethers'
+import * as fs from 'fs-extra'
+
+import 'dotenv/config'
 
 // solidity - synchronous
 // javascript - asynchronous
@@ -10,7 +11,7 @@ async function main() {
     process.env.RPC_URL
   )
 
-  const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider)
+  const wallet = new ethers.Wallet(process.env.PRIVATE_KEY!, provider)
   // const encryptedJson = fs.readFileSync('./.encryptedKey.json', 'utf8')
   // let wallet = new ethers.Wallet.fromEncryptedJsonSync(
   //   encryptedJson,

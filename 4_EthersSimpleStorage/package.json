@@ -1,14 +1,18 @@
 {
   "dependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.0.3",
     "dotenv": "^16.0.1",
     "ethers": "^5.6.9",
     "fs-extra": "^10.1.0",
     "prettier": "^2.7.1",
-    "solc": "^0.8.15"
+    "solc": "^0.8.15",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
-    "deploy": "node deploy.js",
-    "encrypt": "node encryptKey.js"
+    "deploy": "ts-node deploy.ts",
+    "encrypt": "ts-node encryptKey.ts"
   }
 }
