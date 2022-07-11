@@ -1,0 +1,7 @@
+node_modules
+
+.env
+
+*.abi
+*.bin
+.encryptedKey.json
