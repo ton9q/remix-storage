@@ -1,0 +1,36 @@
+* {
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  width: fit-content;
+  padding: 5px 15px;
+}
+
+input {
+  max-width: 100px;
+}
+
+.flex-block {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.eth-amount {
+  align-items: stretch;
+}
+
+.eth-amount label {
+  align-self: center;
+}

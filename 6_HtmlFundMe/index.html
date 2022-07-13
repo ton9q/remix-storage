@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fund Me App</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="flex-block">
+            <button id="button__connect">Connect</button>
+            <p>Status: <span id="status">Disconnected</span></p>
+        </div>
+        <div class="flex-block">
+            <button id="button__balance">Get Balance</button>
+            <p>Balance:<span id="balance">-</span></p>
+        </div>
+        <button id="button__withdraw">Withdraw All</button>
+
+        <div class="flex-block eth-amount">
+            <button type="button" id="button__fund">Fund</button>
+            <label for="eth-amount">ETH Amount:</label>
+            <input id="eth-amount" placeholder="0.05" />
+        </div>
+    </main>
+</body>
+
+<script src="scripts/index.js" type="module"></script>
+
+</html>
