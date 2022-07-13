@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "lint": "yarn prettier --check .",
+    "lint:fix": "yarn prettier --write .",
+    "typechain": "yarn hardhat typechain",
+    "ci:clean": "rm -rf ./artifacts ./cache .;types"
+  },
   "devDependencies": {
     "@ethersproject/abi": "^5.6.4",
     "@ethersproject/providers": "^5.6.8",
