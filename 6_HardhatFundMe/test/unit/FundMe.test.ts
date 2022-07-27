@@ -136,10 +136,12 @@ import { developmentChains } from "../../helper-hardhat-config";
           const accounts = await ethers.getSigners();
           const fundMeConnectedContract = await fundMe.connect(accounts[1]);
 
-          await expect(fundMeConnectedContract.withdraw()).to.be.reverted;
-          //   await expect(fundMeConnectedContract.withdraw()).to.be.revertedWith(
-          //     "FundMe__NotOwner"
-          //   );
+          await expect(
+            fundMeConnectedContract.withdraw()
+          ).to.be.revertedWithCustomError(
+            fundMeConnectedContract,
+            "FundMe__NotOwner"
+          );
         });
       });
     });
